@@ -12,7 +12,7 @@ module.exports = {
   },
   module: {
     rules: [{
-      test: /\.html$/,
+      test: /\.htmlx$/,
       use: {
         loader: 'svelte-loader',
         options: {
@@ -22,6 +22,6 @@ module.exports = {
     }]
   },
   resolve: {
-    extensions: ['.js', '.json', '.html']
+    extensions: ['.js', '.json', '.htmlx']
   }
 }
