@@ -3,6 +3,9 @@
   <link rel="canonical" href="/">
   <meta name="description" content="some description">
   <meta name="keywords" content="some keywords">
+  {#if true}
+  <meta name="robots" content="noindex,follow">
+  {/if}
 </svelte:head>
 
 <div>Just a dummy page.</div>
