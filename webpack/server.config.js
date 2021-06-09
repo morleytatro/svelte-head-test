@@ -14,16 +14,18 @@ module.exports = {
   },
   module: {
     rules: [{
-      test: /\.htmlx$/,
+      test: /\.svelte$/,
       use: {
         loader: 'svelte-loader',
         options: {
-          generate: 'ssr'
+          compilerOptions: {
+            generate: 'ssr'
+          }
         }
       }
     }]
   },
   resolve: {
-    extensions: ['.js', '.json', '.htmlx']
+    extensions: ['.js', '.json', '.svelte']
   }
 }

@@ -1,6 +1,6 @@
 import DefaultPage from '../src/components/DefaultPage';
 
-export default () => (req, res) => {
+export default () => (_req, res) => {
   const { html, head } = DefaultPage.render();
 
   res.send(`

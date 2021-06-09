@@ -6,3 +6,11 @@
 </svelte:head>
 
 <div>Just a dummy page.</div>
+
+<script>
+  import { onMount } from 'svelte';
+
+  onMount(() => {
+    console.log('loaded!');
+  })
+</script>

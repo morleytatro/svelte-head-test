@@ -3,7 +3,6 @@ const webpack = require('webpack');
 const webpackDevMiddleware = require('webpack-dev-middleware');
 const webpackHotMiddleware = require('webpack-hot-middleware');
 const webpackHotServerMiddleware = require('webpack-hot-server-middleware');
-require = require('esm')(module);
 
 const clientConfig = require('../webpack/client.config');
 const serverConfig = require('../webpack/server.config');

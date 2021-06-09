@@ -1,10 +1,17 @@
 const { resolve } = require('path');
+const webpack = require('webpack');
+
+const DEV = process.env.NODE_ENV !== 'production';
 
 module.exports = {
   name: 'client',
   target: 'web',
   mode: process.env.NODE_ENV || 'development',
-  entry: resolve(__dirname, '..', 'src', 'index.js'),
+  entry: [
+    DEV && 'webpack-hot-middleware/client',
+    resolve(__dirname, '..', 'src', 'index.js')
+  ]
+    .filter(Boolean),
   output: {
     path: resolve(__dirname, 'dist'),
     filename: 'bundle.js',
@@ -12,16 +19,25 @@ module.exports = {
   },
   module: {
     rules: [{
-      test: /\.htmlx$/,
+      test: /\.svelte$/,
       use: {
         loader: 'svelte-loader',
         options: {
-          hydratable: true
+          compilerOptions: {
+            dev: DEV,
+            hydratable: true,
+          },
+          hotReload: DEV,
+          hotOptions: {
+            preserveLocalState: true
+          }
         }
       }
     }]
   },
+  plugins: [DEV && new webpack.HotModuleReplacementPlugin()]
+    .filter(Boolean),
   resolve: {
-    extensions: ['.js', '.json', '.htmlx']
+    extensions: ['.js', '.json', '.svelte']
   }
 }
