@@ -5,7 +5,7 @@
   },
   "devDependencies": {
     "svelte-loader": "^3.1.1",
-    "webpack": "^5.38.1",
+    "webpack": "^5.39.0",
     "webpack-dev-middleware": "^5.0.0",
     "webpack-hot-middleware": "^2.25.0",
     "webpack-hot-server-middleware": "^0.6.1",

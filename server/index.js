@@ -9,6 +9,8 @@ const serverConfig = require('../webpack/server.config');
 
 const app = express();
 
+app.get('/favicon.ico', (_, res) => res.sendStatus(204));
+
 const compiler = webpack([clientConfig, serverConfig]);
 
 app.use(webpackDevMiddleware(compiler, {
