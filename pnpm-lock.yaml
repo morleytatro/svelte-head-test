@@ -3,8 +3,8 @@ lockfileVersion: 5.3
 specifiers:
   express: ^4.17.1
   svelte: ^3.38.2
-  svelte-loader: ^3.1.1
-  webpack: ^5.39.0
+  svelte-loader: ^3.1.2
+  webpack: ^5.39.1
   webpack-dev-middleware: ^5.0.0
   webpack-hot-middleware: ^2.25.0
   webpack-hot-server-middleware: ^0.6.1
@@ -15,11 +15,11 @@ dependencies:
   svelte: 3.38.2
 
 devDependencies:
-  svelte-loader: 3.1.1_svelte@3.38.2
-  webpack: 5.39.0
-  webpack-dev-middleware: 5.0.0_webpack@5.39.0
+  svelte-loader: 3.1.2_svelte@3.38.2
+  webpack: 5.39.1
+  webpack-dev-middleware: 5.0.0_webpack@5.39.1
   webpack-hot-middleware: 2.25.0
-  webpack-hot-server-middleware: 0.6.1_webpack@5.39.0
+  webpack-hot-server-middleware: 0.6.1_webpack@5.39.1
   webpack-node-externals: 3.0.0
 
 packages:
@@ -46,8 +46,8 @@ packages:
     resolution: {integrity: sha512-cxWFQVseBm6O9Gbw1IWb8r6OS4OhSt3hPZLkFApLjM8TEXROBuQGLAH2i2gZpcXdLBIrpXuTDhH7Vbm1iXmNGA==}
     dev: true
 
-  /@types/node/15.12.2:
-    resolution: {integrity: sha512-zjQ69G564OCIWIOHSXyQEEDpdpGl+G348RAKY0XXy9Z5kU9Vzv1GMNnkar/ZJ8dzXB3COzD9Mo9NtRZ4xfgUww==}
+  /@types/node/15.12.4:
+    resolution: {integrity: sha512-zrNj1+yqYF4WskCMOHwN+w9iuD12+dGm0rQ35HLl9/Ouuq52cEtd0CH9qMgrdNmi5ejC1/V7vKEXYubB+65DkA==}
     dev: true
 
   /@webassemblyjs/ast/1.11.0:
@@ -235,7 +235,7 @@ packages:
     engines: {node: ^6 || ^7 || ^8 || ^9 || ^10 || ^11 || ^12 || >=13.7}
     hasBin: true
     dependencies:
-      caniuse-lite: 1.0.30001237
+      caniuse-lite: 1.0.30001238
       colorette: 1.2.2
       electron-to-chromium: 1.3.752
       escalade: 3.1.1
@@ -251,8 +251,8 @@ packages:
     engines: {node: '>= 0.8'}
     dev: false
 
-  /caniuse-lite/1.0.30001237:
-    resolution: {integrity: sha512-pDHgRndit6p1NR2GhzMbQ6CkRrp4VKuSsqbcLeOQppYPKOYkKT/6ZvZDvKJUqcmtyWIAHuZq3SVS2vc1egCZzw==}
+  /caniuse-lite/1.0.30001238:
+    resolution: {integrity: sha512-bZGam2MxEt7YNsa2VwshqWQMwrYs5tR5WZQRYSuFxsBQunWjBuXhN4cS9nV5FFb1Z9y+DoQcQ0COyQbv6A+CKw==}
     dev: true
 
   /chrome-trace-event/1.0.3:
@@ -518,7 +518,7 @@ packages:
     resolution: {integrity: sha512-EoBdilOTTyOgmHXtw/cPc+ZrCA0KJMrkXzkrPGNwLmnvvlN1nj7MPrxpT7m+otSv2e1TLaVffzDnE/LB14zJMg==}
     engines: {node: '>= 10.13.0'}
     dependencies:
-      '@types/node': 15.12.2
+      '@types/node': 15.12.4
       merge-stream: 2.0.0
       supports-color: 8.1.1
     dev: true
@@ -823,23 +823,23 @@ packages:
     resolution: {integrity: sha1-fRh9tcbNu9ZNdaMvkbiZi94yc8M=}
     dev: true
 
-  /svelte-hmr/0.12.9_svelte@3.38.2:
-    resolution: {integrity: sha512-SGE7Odznj4dqZtUVIWcoPCvZ9gHImxVIIjrz+O3DDSi0j4OaSLim6MRF4UdhlBKeW3glSRc+tXNSKYvM5x+Dyw==}
+  /svelte-hmr/0.14.4_svelte@3.38.2:
+    resolution: {integrity: sha512-kItFF7vqzStckSigoFmMnxJpTOdB9TWnQAW6Js+yAB4277tLbJIIE5KBlGHNmJNpA7MguqidsPB27Uw5UzQPCA==}
     peerDependencies:
       svelte: '>=3.19.0'
     dependencies:
       svelte: 3.38.2
     dev: true
 
-  /svelte-loader/3.1.1_svelte@3.38.2:
-    resolution: {integrity: sha512-JU7qo1yBdDeJ3Aw23WoGKXrVaSn3KeWkM9KMl43HuMVFrsPNHIzZHTsf1ARJX/Abm3jeqNjigaO35RVbixhmWg==}
+  /svelte-loader/3.1.2_svelte@3.38.2:
+    resolution: {integrity: sha512-RhVIvitb+mtIwKNyvNQoDQ0EhXg2KH8LhQiiqeJh8u6vqJyGWoMoFcYCar69TT+1iaK5IYe0wPNYJ6TILcsurw==}
     peerDependencies:
       svelte: '>3.0.0'
     dependencies:
       loader-utils: 2.0.0
       svelte: 3.38.2
       svelte-dev-helper: 1.1.9
-      svelte-hmr: 0.12.9_svelte@3.38.2
+      svelte-hmr: 0.14.4_svelte@3.38.2
     dev: true
 
   /svelte/3.38.2:
@@ -852,7 +852,7 @@ packages:
     engines: {node: '>=6'}
     dev: true
 
-  /terser-webpack-plugin/5.1.3_webpack@5.39.0:
+  /terser-webpack-plugin/5.1.3_webpack@5.39.1:
     resolution: {integrity: sha512-cxGbMqr6+A2hrIB5ehFIF+F/iST5ZOxvOmy9zih9ySbP1C2oEWQSOUS+2SNBTjzx5xLKO4xnod9eywdfq1Nb9A==}
     engines: {node: '>= 10.13.0'}
     peerDependencies:
@@ -864,7 +864,7 @@ packages:
       serialize-javascript: 5.0.1
       source-map: 0.6.1
       terser: 5.7.0
-      webpack: 5.39.0
+      webpack: 5.39.1
     dev: true
 
   /terser/5.7.0:
@@ -919,7 +919,7 @@ packages:
       graceful-fs: 4.2.6
     dev: true
 
-  /webpack-dev-middleware/5.0.0_webpack@5.39.0:
+  /webpack-dev-middleware/5.0.0_webpack@5.39.1:
     resolution: {integrity: sha512-9zng2Z60pm6A98YoRcA0wSxw1EYn7B7y5owX/Tckyt9KGyULTkLtiavjaXlWqOMkM0YtqGgL3PvMOFgyFLq8vw==}
     engines: {node: '>= 12.13.0'}
     peerDependencies:
@@ -931,7 +931,7 @@ packages:
       mime-types: 2.1.31
       range-parser: 1.2.1
       schema-utils: 3.0.0
-      webpack: 5.39.0
+      webpack: 5.39.1
     dev: true
 
   /webpack-hot-middleware/2.25.0:
@@ -943,7 +943,7 @@ packages:
       strip-ansi: 3.0.1
     dev: true
 
-  /webpack-hot-server-middleware/0.6.1_webpack@5.39.0:
+  /webpack-hot-server-middleware/0.6.1_webpack@5.39.1:
     resolution: {integrity: sha512-YOKwdS0hnmADsNCsReGkMOBkoz2YVrQZvnVcViM2TDXlK9NnaOGXmnrLFjzwsHFa0/iuJy/QJFEoMxzk8R1Mgg==}
     peerDependencies:
       webpack: '*'
@@ -951,7 +951,7 @@ packages:
       debug: 3.2.7
       require-from-string: 2.0.2
       source-map-support: 0.5.19
-      webpack: 5.39.0
+      webpack: 5.39.1
     dev: true
 
   /webpack-node-externals/3.0.0:
@@ -967,8 +967,8 @@ packages:
       source-map: 0.6.1
     dev: true
 
-  /webpack/5.39.0:
-    resolution: {integrity: sha512-25CHmuDj+oOTyteI13sUqNlCnjCnySuhiKWE/cRYPQYeoQ3ijHgyWX27CiyUKLNGq27v8S0mrksyTreT/xo7pg==}
+  /webpack/5.39.1:
+    resolution: {integrity: sha512-ulOvoNCh2PvTUa+zbpRuEb1VPeQnhxpnHleMPVVCq3QqnaFogjsLyps+o42OviQFoaGtTQYrUqDXu1QNkvUPzw==}
     engines: {node: '>=10.13.0'}
     hasBin: true
     peerDependencies:
@@ -997,7 +997,7 @@ packages:
       neo-async: 2.6.2
       schema-utils: 3.0.0
       tapable: 2.2.0
-      terser-webpack-plugin: 5.1.3_webpack@5.39.0
+      terser-webpack-plugin: 5.1.3_webpack@5.39.1
       watchpack: 2.2.0
       webpack-sources: 2.3.0
     dev: true
