@@ -5,7 +5,7 @@
   <meta name="keywords" content="some keywords">
 </svelte:head>
 
-<div>Changed!</div>
+<div>Changed again!</div>
 
 <script>
   import { onMount } from 'svelte';
